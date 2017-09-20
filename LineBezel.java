@@ -3,8 +3,9 @@
  */
 public class LineBezel implements ILineStep {
 
+
     @Override
     public IProductPart buildProductPart() {
-        return null;
+        return new PartBezel();
     }
 }
