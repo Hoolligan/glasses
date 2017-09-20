@@ -5,6 +5,6 @@ public class LineArches implements ILineStep{
 
     @Override
     public IProductPart buildProductPart() {
-        return null;
+        return new PartArches();
     }
 }

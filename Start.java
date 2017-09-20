@@ -9,6 +9,7 @@ public class Start {
         LineArches lineArches = new LineArches();
 
         AssemblyLine assemblyLine = new AssemblyLine(LineBezel, LineLenses, LineArches);
-        Glasses glasses = new Glasses(PartBezel, PartLenses, PartArches);
+        Glasses glasses = (Glasses)assemblyLine.assemblyProduct(new Glasses());
     }
+
 }

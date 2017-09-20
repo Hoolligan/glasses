@@ -3,32 +3,27 @@
  */
 public class Glasses implements IProduct{
 
-    private PartBezel partBezel;
-    private PartLenses partLenses;
-    private PartArches partArches;
+    private IProductPart partBezel;
+    private IProductPart partLenses;
+    private IProductPart partArches;
 
-    public Glasses(PartBezel partBezel, PartLenses partLenses, PartArches partArches) {
-        this.partBezel = partBezel;
-        this.partLenses = partLenses;
-        this.partArches = partArches;
-        System.out.println("Очки собраны");
-    }
+
 
     @Override
     public void installBezelPart(IProductPart productPart) {
-        System.out.println(partBezel);
+        this.partBezel = partBezel;
 
     }
 
     @Override
     public void installLensesPart(IProductPart productPart) {
-        System.out.println(partLenses);
+        this.partLenses = partLenses;
 
     }
 
     @Override
     public void installArchesPart(IProductPart productPart) {
-        System.out.println(partArches);
+        this.partArches = partArches;
 
     }
 }

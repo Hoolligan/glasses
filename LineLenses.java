@@ -5,6 +5,6 @@ public class LineLenses implements ILineStep {
 
     @Override
     public IProductPart buildProductPart() {
-        return null;
+        return new PartLenses();
     }
 }

@@ -3,17 +3,7 @@
  */
 public class PartArches implements IProductPart {
 
-    private String material;
-
-    public PartArches(String material) {
-        this.material = material;
-    }
-
-    public String getMaterial() {
-        return material;
-    }
-
-    public void setMaterial(String material) {
-        this.material = material;
+    public PartArches() {
+        System.out.println("Созданы Дужки");
     }
 }

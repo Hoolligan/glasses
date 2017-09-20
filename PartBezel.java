@@ -3,17 +3,7 @@
  */
 public class PartBezel implements IProductPart {
 
-    private int idNumber;
-
-    public PartBezel(int idNumber) {
-        this.idNumber = idNumber;
-    }
-
-    public int getIdNumber() {
-        return idNumber;
-    }
-
-    public void setIdNumber(int idNumber) {
-        this.idNumber = idNumber;
+    public PartBezel() {
+        System.out.println("Создана оправа");
     }
 }
